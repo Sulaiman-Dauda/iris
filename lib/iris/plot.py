@@ -1725,7 +1725,7 @@ def fill_between(x, y1, y2, *args, **kwargs):
         raise TypeError("x must be a cube or a coordinate.")
     if not isinstance(y1, (iris.cube.Cube, iris.coords.Coord)):
         raise TypeError("y1 must be a cube or a coordinate.")
-    if not isinstance(y1, (iris.cube.Cube, iris.coords.Coord)):
+    if not isinstance(y2, (iris.cube.Cube, iris.coords.Coord)):
         raise TypeError("y2 must be a cube or a coordinate.")
     args = (x, y1, y2) + args
     _plot_args = None
